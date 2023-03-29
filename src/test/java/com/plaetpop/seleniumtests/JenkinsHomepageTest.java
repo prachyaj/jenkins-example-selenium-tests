@@ -27,7 +27,7 @@ public class JenkinsHomepageTest {
         
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        //options.setBinary("/usr/bin/google-chrome");
+        options.setBinary("/usr/bin/google-chrome");
         //options.setExperimentalOption("useAutomationExtension", false);
         driver = new ChromeDriver(options);
     }
