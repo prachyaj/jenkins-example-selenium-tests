@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        sh './mvn clean test'
+        sh './mvnw clean test'
       }
     }
   }
