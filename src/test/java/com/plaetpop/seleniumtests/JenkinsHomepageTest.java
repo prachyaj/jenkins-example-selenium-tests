@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class JenkinsHomepageTest {
