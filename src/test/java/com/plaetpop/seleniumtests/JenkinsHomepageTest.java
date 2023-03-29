@@ -23,12 +23,12 @@ public class JenkinsHomepageTest {
     void setupTest() {
         
         System.out.println("hi world");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        options.setBinary("/usr/bin/google-chrome");
-        options.setExperimentalOption("useAutomationExtension", false);
+        //options.setBinary("/usr/bin/google-chrome");
+        //options.setExperimentalOption("useAutomationExtension", false);
         driver = new ChromeDriver(options);
     }
 
