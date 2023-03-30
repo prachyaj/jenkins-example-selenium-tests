@@ -27,7 +27,7 @@ public class JenkinsHomepageTest {
     void setupTest() {
         
         System.out.println("hi world");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver/chromedriver.exe");
         WebDriverManager.chromedriver().setup();   
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
