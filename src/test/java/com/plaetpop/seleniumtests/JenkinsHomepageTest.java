@@ -30,9 +30,10 @@ public class JenkinsHomepageTest {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver/chromedriver.exe");
         System.out.println("chromedriver Passed");
         WebDriverManager.chromedriver().setup();   
+
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--headless");
+        options.addArguments("--headless=new");
         options.addArguments("window-size=1280x800");
         options.addArguments("--disable-extensions");
         options.addArguments("start-maximized");
@@ -41,7 +42,7 @@ public class JenkinsHomepageTest {
         options.addArguments("--disable-gpu-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--remote-debugging-port=9222");
-        options.setPageLoadStrategy(PageLoadStrategy.NONE);
+        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         options.setBinary("/usr/bin/google-chrome");
         //options.setExperimentalOption("useAutomationExtension", false);
         
