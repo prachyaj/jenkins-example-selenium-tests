@@ -38,7 +38,7 @@ public class JenkinsHomepageTest {
         options.addArguments("--disable-setuid-sandbox");
         options.addArguments("--remote-debugging-port=9222");
         options.setPageLoadStrategy(PageLoadStrategy.NONE);
-        options.setBinary("/usr/bin/google-chrome/binary");
+        options.setBinary("/usr/bin/google-chrome");
         options.setExperimentalOption("useAutomationExtension", false);
         
         DesiredCapabilities cp=new DesiredCapabilities();
